@@ -1,42 +1,62 @@
 import React from "react"
 import { Link } from "gatsby"
-// import { window } from "browser-monads"
-// import logo from "../../images/logo.png"
-const logo = require("../../images/logo.png")
+import { window } from "browser-monads"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { AiOutlineGithub } from "react-icons/ai"
+import { FaFacebook } from "react-icons/fa"
+import { IoLogoYoutube } from "react-icons/io"
+
+import { FaLinkedin } from "react-icons/fa"
+import "./Utils"
 import "./nav.css"
 
 export default function Nav() {
   return (
-    <nav>
+    <nav
+      className="headr-cnter"
+      // style=
+      // {{
+      //   backgroundColor: "#000000",
+      //   overflow: "hidden",
+      //   padding: "5px 180px",
+      // }}
+    >
       <div className="nav_items">
         <a className="nav_item--left" href="/">
           <h2>
-            Ali Raza <b>|</b>
+            Ali Raza <b style={{ margin: "25px" }}>|</b>
             <span>Articles</span>
           </h2>
-          {/* <img src={logo} alt="logo" className="nav_item-logo" /> */}
         </a>
-        <Link
-          className={
-            window.location.href.indexOf("contact") > 0
-              ? "nav_item-link active"
-              : "nav_item-link"
-          }
-          to="/contact"
-        >
-          Contact
-        </Link>
-        <Link
-          className={
-            window.location.href.indexOf("blog") > 0 ||
-            window.location.href.indexOf("category") > 0
-              ? "nav_item-link active"
-              : "nav_item-link"
-          }
-          to="/blog"
-        >
-          Blog
-        </Link>
+        <div className="link-gap">
+          <Link
+            className={
+              window.location.href.indexOf("contact") > 0
+                ? "nav_item-link active"
+                : "nav_item-link"
+            }
+            to="/contact"
+          >
+            <AiOutlineGithub />
+          </Link>
+          <Link
+            className={
+              window.location.href.indexOf("blog") > 0 ||
+              window.location.href.indexOf("category") > 0
+                ? "nav_item-link active"
+                : "nav_item-link"
+            }
+            to="/blog"
+          >
+            <FaFacebook />
+          </Link>
+          <Link to="https://www.youtube.com" className="nav_item-link active">
+            <IoLogoYoutube />
+          </Link>
+          <Link to="/blog" className="nav_item-link active">
+            <FaLinkedin />
+          </Link>
+        </div>
       </div>
     </nav>
   )

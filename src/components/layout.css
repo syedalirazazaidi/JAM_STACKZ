@@ -1,6 +1,9 @@
 body{
-  background-color:#000000;
+  background-color:#121212!important;;
   margin: 0 auto;
-  padding:0 10%;
-  max-width: 1200px;
+  /* font-family: Roboto,sans-serif!important; */
+  
+  -webkit-font-smoothing: antialiased;
+  /* padding:0 0; */
+  /* max-width: 1100px; */
 }
