@@ -10,6 +10,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -35,6 +36,8 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+
+    `@contentful/gatsby-transformer-contentful-richtext`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -45,6 +48,7 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
