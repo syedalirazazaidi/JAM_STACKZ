@@ -1,3 +1,48 @@
 .card{
-   color: turquoise;
+   border-radius: 5px;
+   border-color: rgb(15, 221, 173);
+   border-bottom-width: 9rem;
+   /* border:1px solid white; */
+}
+.card:hover{
+   cursor: pointer;
+   color:'red';
+   transform: scale(1.01);
+}
+.card_title{
+   font-family: Baskervilla,serif;
+   font-size: 20px;
+   color: #fff;
+   line-height: 28px;
+   background-color: #333333;
+   margin-right: 20px;
+   padding:1px 20px;
+   margin-bottom: 4rem;
+   
+
+}
+.card_name{
+   color:#3282b8
+}
+/* .images{
+   text-align: center;
+   text-transform: capitalize;
+   width: 10px;
+   margin: 0 auto 10rem auto;
+} */
+.feed{
+  margin-top: 40px;
+  padding :9rem 14.9rem;
+  column-gap: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+ @media screen and (max-width:768px){
+   .feed{
+   margin: 0 auto;
+   display: block;
+   padding :1rem 1.5rem;
+   
+   }
 }

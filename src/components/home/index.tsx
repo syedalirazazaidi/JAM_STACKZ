@@ -6,10 +6,7 @@ const HomeBlog = () => (
   <StaticQuery
     query={graphql`
       query HomeQuery {
-        blog: allContentfulPost(
-          limit: 6
-          sort: { fields: [createdAt], order: DESC }
-        ) {
+        blog: allContentfulPost(sort: { fields: [createdAt], order: DESC }) {
           edges {
             node {
               title
@@ -31,25 +28,22 @@ const HomeBlog = () => (
     render={data => (
       <header>
         {
-          <div>
+          <div className="feed">
             {data.blog.edges.map(edge => (
               <div
                 key={edge.node.id}
                 className="card"
-                style={{
-                  backgroundImage: `linear-gradient(
-                to bottom,
-                rgba(10,10,10,0) 0%,
-                rgba(10,10,10,0) 50%,
-                rgba(10,10,10,0) 100%,
-                url(${edge.node.image.fluid.src})
-              )`,
-                }}
-                // onClick={() => navigate(`/blog/${edge.node.slug}`)}
+                onClick={() => navigate(`/blog/${edge.node.slug}`)}
               >
-                {/* fluid={allContentfulBlog.edges[0].node.coverImage.fluid}  */}
-                <p style={{ color: "white" }}>{edge.node.title}</p>
-                <img src={edge.node.image.fluid.src} alt="mage" />
+                <img
+                  src={edge.node.image.fluid.src}
+                  alt="image"
+                  className="images"
+                />
+                <div className="card_title">
+                  <p className="card_name">NETLIFY CMS</p>
+                  <p>{edge.node.title}</p>
+                </div>
               </div>
             ))}
           </div>

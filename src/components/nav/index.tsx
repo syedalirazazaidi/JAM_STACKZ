@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import { window } from "browser-monads"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { AiOutlineGithub } from "react-icons/ai"
-import { FaFacebook } from "react-icons/fa"
+// import { FaFacebook } from "react-icons/fa"
 import { IoLogoYoutube } from "react-icons/io"
 
-import { FaLinkedin } from "react-icons/fa"
+import { FaLinkedin, FaFacebook } from "react-icons/fa"
 import "./Utils"
 import "./nav.css"
 
