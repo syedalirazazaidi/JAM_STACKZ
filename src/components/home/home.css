@@ -2,7 +2,8 @@
    border-radius: 5px;
    border-color: rgb(15, 221, 173);
    border-bottom-width: 9rem;
-   /* border:1px solid white; */
+   
+  transition: all 0.4s ease all;
 }
 .card:hover{
    cursor: pointer;
@@ -24,12 +25,7 @@
 .card_name{
    color:#3282b8
 }
-/* .images{
-   text-align: center;
-   text-transform: capitalize;
-   width: 10px;
-   margin: 0 auto 10rem auto;
-} */
+
 .feed{
   margin-top: 40px;
   padding :9rem 14.9rem;

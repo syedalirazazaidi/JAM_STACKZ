@@ -13,6 +13,8 @@ nav{
     font-size: 1rem;
     margin:10px;
     padding: 7px 15rem;
+
+    
    
 }
 .link-gap{
@@ -32,7 +34,12 @@ color:#fff;
 .headr-cnter{
     background-color: #000000;
        overflow: hidden;
-      padding: 5px 180px,
+      /* padding: 5px 180px; */
+
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
 }
 .nav_item-link{
     font-family: Verdana, Tahoma, sans-serif;

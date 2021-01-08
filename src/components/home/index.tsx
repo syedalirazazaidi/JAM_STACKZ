@@ -14,6 +14,8 @@ const HomeBlog = () => (
               author
               slug
               id
+              createdAt(formatString: "MMMM Do, YYYY")
+
               image {
                 fluid(maxWidth: 1200, quality: 85) {
                   src
@@ -43,6 +45,7 @@ const HomeBlog = () => (
                 <div className="card_title">
                   <p className="card_name">NETLIFY CMS</p>
                   <p>{edge.node.title}</p>
+                  <p>{edge.node.createdAt}</p>
                 </div>
               </div>
             ))}

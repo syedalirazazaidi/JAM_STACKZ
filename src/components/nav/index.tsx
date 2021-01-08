@@ -12,15 +12,7 @@ import "./nav.css"
 
 export default function Nav() {
   return (
-    <nav
-      className="headr-cnter"
-      // style=
-      // {{
-      //   backgroundColor: "#000000",
-      //   overflow: "hidden",
-      //   padding: "5px 180px",
-      // }}
-    >
+    <nav className="headr-cnter">
       <div className="nav_items">
         <a className="nav_item--left" href="/">
           <h2>
