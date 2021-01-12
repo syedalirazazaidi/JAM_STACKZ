@@ -1,14 +1,18 @@
 .card{
    border-radius: 5px;
-   border-color: rgb(15, 221, 173);
+   /* border-color: rgb(15, 221, 173); */
    border-bottom-width: 9rem;
-   
+   text-decoration: none;
   transition: all 0.4s ease all;
 }
 .card:hover{
    cursor: pointer;
    color:'red';
    transform: scale(1.01);
+}
+.tile__border-bottom {
+   margin: 0 0 40px;
+   border-bottom: 1.2px solid #242424;
 }
 .card_title{
    font-family: Baskervilla,serif;
@@ -19,11 +23,18 @@
    margin-right: 20px;
    padding:1px 20px;
    margin-bottom: 4rem;
-   
+   text-decoration: none;
 
 }
+.card_title, a:hover, a:active, a:visited, a:focus {
+   text-decoration:none;
+}
+/* .card_title:active {
+     text-decoration: none;
+   }  */
 .card_name{
-   color:#3282b8
+   color:#3282b8;
+   
 }
 
 .feed{
@@ -31,6 +42,7 @@
   padding :9rem 14.9rem;
   column-gap: 2rem;
   display: grid;
+  text-decoration: none;
   grid-template-columns: auto auto auto;
 }
 

@@ -4,9 +4,9 @@ if (process.env.NODE_ENV !== "production") {
 }
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `My Blog`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@Ali Raza`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,7 +33,8 @@ module.exports = {
       options: {
         spaceId: `1u40mb8rof80`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        accessToken: `cxxsyim_o7nXVy9SCZyDUYGrTUXMMrPK1Cx7b34_YUI`,
+        //  process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
 
@@ -61,8 +62,5 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

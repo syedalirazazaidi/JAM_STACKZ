@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql, navigate } from "gatsby"
+import { StaticQuery, graphql, navigate, Link } from "gatsby"
 import Img from "gatsby-image"
 import "./home.css"
 const HomeBlog = () => (
@@ -32,22 +32,25 @@ const HomeBlog = () => (
         {
           <div className="feed">
             {data.blog.edges.map(edge => (
-              <div
+              <Link
                 key={edge.node.id}
                 className="card"
-                onClick={() => navigate(`/blog/${edge.node.slug}`)}
+                to={`/${edge.node.slug}/`}
               >
-                <img
-                  src={edge.node.image.fluid.src}
-                  alt="image"
-                  className="images"
-                />
-                <div className="card_title">
-                  <p className="card_name">NETLIFY CMS</p>
-                  <p>{edge.node.title}</p>
-                  <p>{edge.node.createdAt}</p>
+                <div className="tile__border-bottom">
+                  <img
+                    src={edge.node.image.fluid.src}
+                    alt="image"
+                    className="images"
+                  />
+                  <div className="card_title">
+                    <p className="card_name">NETLIFY CMS</p>
+                    <p>{edge.node.title}</p>
+
+                    <p>{edge.node.createdAt}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         }

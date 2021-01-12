@@ -8,28 +8,16 @@ import Nav from "../components/nav"
 import HomeBlog from "../components/home"
 import Footer from "../components/footer"
 // import Footer from "../components/footer"
-
+import "./index.css"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Nav />
 
+    <h1 className="main-h1">Articles</h1>
     <HomeBlog />
-    <h1
-      style={{
-        color: "#fff",
-        fontSize: "2.3rem",
-        marginTop: "20px",
-        display: "flex",
-        flexDirection: "column",
-        position: "absolute",
-        top: 60,
-        left: "15rem",
-      }}
-    >
-      Articles
-    </h1>
     <Footer />
+    <Link to="/${edge.node.slug}/">GO LINK</Link>
   </Layout>
 )
 
