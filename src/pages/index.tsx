@@ -17,7 +17,8 @@ const IndexPage = () => (
     <h1 className="main-h1">Articles</h1>
     <HomeBlog />
     <Footer />
-    <Link to="/${edge.node.slug}/">GO LINK</Link>
+
+    {/* <Link to="/${edge.node.slug}/">GO LINK</Link> */}
   </Layout>
 )
 

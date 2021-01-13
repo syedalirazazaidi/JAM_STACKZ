@@ -1,12 +1,14 @@
 const dotenv = require("dotenv")
+
 if (process.env.NODE_ENV !== "production") {
   dotenv.config()
 }
 module.exports = {
   siteMetadata: {
-    title: `My Blog`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Blog Codes`,
+    description: `Codes and Blog is created by Ali Raza to share him experiences being Developer, Traveler and Teacher as Full-Stack Developer`,
     author: `@Ali Raza`,
+    myImg: "./mypic.jpg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,8 +35,7 @@ module.exports = {
       options: {
         spaceId: `1u40mb8rof80`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: `cxxsyim_o7nXVy9SCZyDUYGrTUXMMrPK1Cx7b34_YUI`,
-        //  process.env.CONTENTFUL_ACCESS_TOKEN,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
 

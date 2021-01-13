@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Nav from "../components/nav"
-
+import "./blog.css"
 import { documentToPlainTextString } from "@contentful/rich-text-plain-text-renderer"
 const Blog = ({ data }) => {
   console.log(data.contentfulPost.content)
@@ -14,7 +14,9 @@ const Blog = ({ data }) => {
 
   return (
     <Layout>
-      <Nav />
+      <div className="nav-style">
+        <Nav />
+      </div>
 
       <div
         style={{
@@ -30,7 +32,7 @@ const Blog = ({ data }) => {
         {/* <img alt={title} src={image.file.url} /> */}
 
         {/* <Link to="/blog">View more posts</Link> */}
-        <Link to="/">Back to Home</Link>
+        {/* <Link to="/">Back to Home</Link> */}
       </div>
     </Layout>
   )
