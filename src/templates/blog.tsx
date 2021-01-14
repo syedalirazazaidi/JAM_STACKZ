@@ -15,15 +15,7 @@ const Blog = ({ data }: any) => {
         <Nav />
       </div>
 
-      <div
-        style={{
-          color: "green",
-          margin: "0 auto",
-          width: "500px",
-          height: "250px",
-          marginTop: "12rem",
-        }}
-      >
+      <div className="cms-content">
         <p>{documentToPlainTextString(JSON.parse(content.raw))}</p>
 
         {/* <img alt={title} src={image.file.url} /> */}
