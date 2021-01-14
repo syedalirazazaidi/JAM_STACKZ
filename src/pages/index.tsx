@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import Nav from "../components/nav"
 import HomeBlog from "../components/home"
 import Footer from "../components/footer"
-// import Footer from "../components/footer"
 import "./index.css"
 const IndexPage = () => (
   <Layout>
@@ -16,8 +15,8 @@ const IndexPage = () => (
 
     <h1 className="main-h1">Articles</h1>
     <HomeBlog />
-    <Footer />
 
+    <Footer />
     {/* <Link to="/${edge.node.slug}/">GO LINK</Link> */}
   </Layout>
 )

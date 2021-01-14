@@ -4,13 +4,10 @@ import Layout from "../components/layout"
 import Nav from "../components/nav"
 import "./blog.css"
 import { documentToPlainTextString } from "@contentful/rich-text-plain-text-renderer"
-const Blog = ({ data }) => {
+
+const Blog = ({ data }: any) => {
   console.log(data.contentfulPost.content)
-  const { title, body, image, tags, content } = data.contentfulPost
-  // const { title, body, image, tags } = data.contentfulBlogPost
-  // console.log(title, "DATA", body, "ID")
-  // console.log("body", JSON.parse(data))
-  console.log("SLUG", title, "ID")
+  const { content } = data.contentfulPost
 
   return (
     <Layout>

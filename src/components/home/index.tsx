@@ -2,6 +2,7 @@ import React from "react"
 import { StaticQuery, graphql, navigate, Link } from "gatsby"
 import Img from "gatsby-image"
 import "./home.css"
+import image from "../../static/mypic.jpg"
 import { Helmet } from "react-helmet"
 interface HeaderData {
   site: {
@@ -20,6 +21,7 @@ const HomeBlog = () => (
             title
             myImg
             description
+            author
           }
         }
 
@@ -65,18 +67,19 @@ const HomeBlog = () => (
                       <p className="card_name">NETLIFY CMS</p>
                       <p>{edge.node.title}</p>
 
-                      <p>{edge.node.createdAt}</p>
-                      {/* <img
-                        src={data.site.siteMetadata.myImg}
-                        alt="image"
-                        className="images"
-                      /> */}
-                      <img
-                        // className="default-avatar"
-                        // src="/mypic.jpg"
-                        alt="image"
-                      />
-                      {/* <p>{data.site.siteMetadata.description}</p> */}
+                      <div className="aw-content">
+                        <img
+                          className="aw-content-img"
+                          src={image}
+                          width={24}
+                        />
+                        <div>
+                          <p className="aw-title">
+                            {data.site.siteMetadata.author}
+                          </p>
+                          <p className="aw-subtitle">{edge.node.createdAt}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </Link>
