@@ -8,7 +8,7 @@ module.exports = {
     title: `Blog Codes`,
     description: `Codes and Blog is created by Ali Raza to share him experiences being Developer, Traveler and Teacher as Full-Stack Developer`,
     author: `@Ali Raza`,
-    myImg: "./mypic.jpg",
+    // myImg: "./mypic.jpg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

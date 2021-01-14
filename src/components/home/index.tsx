@@ -19,7 +19,7 @@ const HomeBlog = () => (
         site {
           siteMetadata {
             title
-            myImg
+
             description
             author
           }
