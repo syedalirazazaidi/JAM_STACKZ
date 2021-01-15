@@ -2,7 +2,8 @@ import React from "react"
 import { StaticQuery, graphql, navigate, Link } from "gatsby"
 import Img from "gatsby-image"
 import "./home.css"
-import image from "../../static/mypic.jpg"
+import image from "./mypic.jpg"
+
 import { Helmet } from "react-helmet"
 interface HeaderData {
   site: {

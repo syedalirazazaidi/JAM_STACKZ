@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 import { window } from "browser-monads"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { AiOutlineGithub } from "react-icons/ai"

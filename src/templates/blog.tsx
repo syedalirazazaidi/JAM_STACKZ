@@ -43,3 +43,12 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// "gatsby-transformer-sharp": "^2.6.0",
+
+// "gatsby-transformer-remark": "^2.13.1",
+// "gatsby-plugin-sharp": "^2.8.0",
+
+// "gatsby-source-contentful": "4.3.1",
+
+// "gatsby-plugin-manifest": "^2.6.1",
