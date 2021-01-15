@@ -1,8 +1,8 @@
 const dotenv = require("dotenv")
-
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config()
-}
+dotenv.config()
+// if (process.env.NODE_ENV !== "production") {
+//   dotenv.config()
+// }
 module.exports = {
   siteMetadata: {
     title: `Blog Codes`,
